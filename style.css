@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+ 
+}
+ 
+body{
+    background: linear-gradient(180deg, rgb(0 214 189), rgb(204 115 115));
+
+}
+
+
+.win p{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+   
+
+    
+}
+.ScoreContainer{
+    display: flex; 
+    width: 80%;
+     justify-content: space-between;
+     margin: auto;
+      text-align: center;
+}
+.ScoreContainer .p-win, .tie , .c-win{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.ScoreContainer .p-win2, .tie2 , .c-win2{
+    justify-content: center;
+    color: white;
+    padding: 40px;
+    background-color: #a31111;
+    font-size: 25px;
+    border-radius: 20px;
+    outline: 3px dashed rgb(255, 255, 255);
+    font-weight: 600;
+}
+.stand ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+.playerVcomputer{
+     display: flex;
+     text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+     width: 75%;
+     border: none;
+     
+}
+.playerVcomputer h1{
+margin-top: 15vh;
+font-size: 80px;
+}
+
+
+.player{
+    display: flex;
+    text-align: center;
+}
+
+
+ 
+.RPSContainer{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+ 
+
+#RPS button{
+    color: rgb(41, 38, 38);
+    font-size: 20px;
+    width: 100px;
+    height: 100px ;
+    margin: 30px;
+    border-radius: 50%;
+    background-color: #ffe600;
+    font-weight: 600;
+    border: none;
+    box-shadow: 1px 0px 16px 6px #d90a0aad;
+}
+#RPS button:hover{
+    cursor: pointer;
+    background-color: #a6140a;
+    color: white;
+
+ 
+}
+.Pchoise{
+    width: 400px;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.Pchoise  h2{
+    text-align: center;
+
+}
+.Pchoise i {
+    margin-right: 40px;
+    margin-top: 100px;
+    font-size: 100px;
+  
+}
+#Cchoise{
+    width: 400px;
+    height: 100%;
+     display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#Cchoise i {
+    margin-right: 40px;
+    margin-top: 100px;
+    font-size: 100px;
+  
+}
+#Cchoise .computerChoise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#Cchoise .computerChoise i{
+    margin-right: 40px;
+    margin-top: 100px;
+    font-size: 100px;
+
+}
+#play-again{
+    display: flex;
+    justify-content: center;
+}
+#play-again button{
+    color: white;
+    font-size: 35px;
+    width: 250px;
+    height: 90px ;
+    margin: 30px;
+    border-radius: 50%;
+    background-color: #a31111;
+    box-shadow: 0px 20px 16px 6px red;
+        animation: jump 2s infinite linear;
+    border: none;
+ 
+}
+#play-again button:hover{
+     box-shadow: 0 0.375em 0 #9e0e0e;
+    cursor: pointer;
+
+}
+
+.init {
+    animation: rotation 2s infinite linear;
+    font-size: 20px;
+}
+
+/* #play button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 50px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 7px ;
+    font-size: 20px;
+    background-color: #183153;
+    box-shadow: 0 0.100em 0 #1b4074 ;
+    border: none;
+} */
+/* #play button:hover{
+    cursor: pointer;
+    background-color: #31507c;
+    box-shadow: 0 0.100em 0 #102b52ee;
+} */
+
+ 
+@keyframes jump {
+    0% { transform: translate(-0%, -0%)  }
+    50% { transform: translate(-0%, -0%)  }
+    55% {  transform: translate(-0%, -80%) rotate(2deg); }
+    60% { transform: translate(-0%, -0%) rotate(-2deg); }
+    65% {  transform: translate(-0%, -40%) rotate(2deg); }
+    70% {  transform: translate(-0%, -20%) rotate(-2deg); }
+    100% { transform: translate(-0%, -0%)  }
+}
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
